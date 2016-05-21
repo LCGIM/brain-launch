@@ -24,6 +24,7 @@ default: &default
 
 development:
   <<: *default
+  host: localhost
   database: brain_launch_development
   host: localhost
 
