@@ -19,7 +19,6 @@ gem 'rails', '4.2.5.1'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'therubyracer'
-gem 'turbolinks'
 gem 'uglifier'
 gem 'unicorn'
 
