@@ -11,8 +11,12 @@
     <%= render partial: 'nav/top_fixed'  %>
   </nav>
   <body>
-    <%= render partial: 'layouts/flash_messages'  %>
-    <%= yield %>
+    <br>
+    <br>
+    <div class="container">
+      <%= render partial: 'layouts/flash_messages'  %>
+      <%= yield %>
+    </div>
   </body>
   <footer>
     <%= render partial: 'layouts/footer'  %>
