@@ -7,18 +7,21 @@
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
   </head>
-  <nav>
-    <%= render partial: 'nav/top_fixed'  %>
-  </nav>
   <body>
-    <br>
-    <br>
+    <nav class="navbar navbar-defaut">
+      <div class="container">
+        <%= render partial: 'nav/top_fixed'  %>
+        <div>
+          <%= flash_messages  %>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-      <%= render partial: 'layouts/flash_messages'  %>
       <%= yield %>
     </div>
-  </body>
-  <footer>
-    <%= render partial: 'layouts/footer'  %>
-  </footer>
+  </div>
+</body>
+<footer>
+  <%= render partial: 'layouts/footer'  %>
+</footer>
 </html>
