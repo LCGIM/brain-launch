@@ -1,14 +1,13 @@
 source 'https://rubygems.org'
 
-
-
-gem 'dotenv-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap-tooltip-rails'
 gem 'bootstrap_helper'
+gem "font-awesome-rails"
 gem 'coffee-rails'
 gem 'compass-rails'
 gem 'devise'
+gem 'omniauth-facebook'
 gem 'jbuilder'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -22,6 +21,8 @@ gem 'devise-bootstrap-views'
 gem 'therubyracer'
 gem 'uglifier'
 gem 'unicorn'
+gem 'dotenv-rails'
+
 
 group :development, :test do
   gem 'better_errors'
