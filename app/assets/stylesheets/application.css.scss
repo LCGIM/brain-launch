@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootstrap.scss";
+@import "font-awesome";
+@import "bootstrap-social.scss";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -17,6 +19,7 @@
  *= require essentials
  *= require devise_bootstrap_views
  *= require layout
+ *= require bootstrap-social
  *= require_tree .
  *= require_self
  */
