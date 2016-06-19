@@ -1,0 +1,698 @@
+<h1>Store#index</h1>
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+   <head>
+		<meta charset="utf-8" />
+		<title>Brain Launch - Multipurpose + Admin</title>
+		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<meta name="description" content="Launch Pad for Your Child's Success" />
+		<meta name="Author" content="Dr. Don Helms" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="app/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="app/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="app/assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="app/assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="app/assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="app/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="app/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/boxed_background/1.jpg"
+	-->
+<!--	<body class="smoothscroll enable-animation">  Alex commented this out to use below class and save original example-->
+    <body class="boxed">
+
+		<!-- SLIDE TOP -->
+		<div id="slidetop">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> WHY BRAIN LAUNCH?</h6>
+						<p>Affordable, easy-to-administer programs that will start children on a journey towards actualizing their true potential. </p>
+					</div>
+
+	<!--ALrem				<div class="col-md-4">
+						<h6><i class="icon-attachment"></i> RECENTLY VISITED</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+						</ul>
+					</div>  -->
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Contact Us:</b> https://www.brainlaunch.com/contact/</li>
+							<li><b>Email:</b> <a href="mailto:support@brainlaunch.com">support@brainlaunch.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+		<!--	<a class="slidetop-toggle" href="#"><!-- toggle button --> <!-- </a>  -->
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!--
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.noborder 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent noborder"
+			-->
+			<div id="header" class="sticky clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<ul class="pull-right nav nav-pills nav-second-main">
+
+							<!-- SEARCH -->
+	<!--ALrem						<li class="search">
+								<a href="javascript:;">
+									<i class="fa fa-search"></i>
+								</a>
+								<div class="search-box">
+									<form action="page-search-result-1.html" method="get">
+										<div class="input-group">
+											<input type="text" name="src" placeholder="Search" class="form-control" />
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit">Search</button>
+											</span>
+										</div>
+									</form>
+								</div>
+							</li>
+							<!-- /SEARCH -->
+
+							<!-- QUICK SHOP CART -->
+<!--ALrem							<li class="quick-cart">
+								<a href="#">
+									<span class="badge badge-aqua btn-xs badge-corner">2</span>
+									<i class="fa fa-shopping-cart"></i>
+								</a>
+								<div class="quick-cart-box">
+									<h4>Shop Cart</h4>
+
+									<div class="quick-cart-wrapper">
+
+										<a href="#"><!-- cart item -->
+		<!--ALrem									<img src="assets/images/demo/people/300x300/4-min.jpg" width="45" height="45" alt="" />
+											<h6><span>2x</span> RED BAG WITH HUGE POCKETS</h6>
+											<small>$37.21</small>
+										</a><!-- /cart item -->
+
+					<!--ALrem					<a href="#"><!-- cart item -->
+	<!--ALrem										<img src="assets/images/demo/people/300x300/5-min.jpg" width="45" height="45" alt="" />
+											<h6><span>2x</span> THIS IS A VERY LONG TEXT AND WILL BE TRUNCATED</h6>
+											<small>$17.18</small>
+										</a><!-- /cart item -->
+
+										<!-- cart no items exampe -->
+										<!--
+										<a class="text-center" href="#">
+											<h6>0 ITEMS ON YOUR CART</h6>
+										</a>
+										-->
+
+				<!--ALrem					</div>
+
+									<!-- quick cart footer -->
+				<!--ALrem					<div class="quick-cart-footer clearfix">
+										<a href="shop-cart.html" class="btn btn-primary btn-xs pull-right">VIEW CART</a>
+										<span class="pull-left"><strong>TOTAL:</strong> $54.39</span>
+									</div>
+									<!-- /quick cart footer --><!--ALrem					</li>
+							<!-- /QUICK SHOP CART -->
+
+						</ul>
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a href="https://www.brainlaunch.com/index2.php" target="_self" class="logo pull-left">
+							<img src="assets/images/blogo126x80.png" alt="Brain Launch Website" title="Brain Launch Website" />
+						</a>
+
+						<!--
+							Top Nav
+
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse pull-right nav-main-collapse collapse">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example:
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main">
+									<li class="dropdown active"><!-- HOME -->
+										<a class="dropdown-toggle" href="https://www.brainlaunch.com/index2.php">
+											HOME
+										</a>
+									</li>
+									<li class="dropdown"><!-- ABOUT US -->
+										<a class="dropdown-toggle" href="https://www.brainlaunch.com/index2.php/about-us/">
+											ABOUT US
+										</a>
+
+									<li class="dropdown"><!-- PROGRAM -->
+										<a class="dropdown-toggle" href="https://www.brainlaunch.com/index2.php/program/">
+											PROGRAM
+										</a>
+
+									<li class="dropdown mega-menu"><!-- STORE -->
+										<a class="dropdown-toggle" href="#">
+											STORE
+										</a>
+
+									<li class="dropdown"><!-- BLOG -->
+										<a class="dropdown-toggle" href="https://www.brainlaunch.com/index2.php/blog/">
+											BLOG
+										</a>
+
+									<li class="dropdown"><!-- VIDEOS -->
+										<a class="dropdown-toggle" href="https://www.brainlaunch.com/index2.php/videos/">
+											VIDEOS
+										</a>
+
+									<li class="dropdown mega-menu"><!-- CONTACT US -->
+										<a class="dropdown-toggle" href="https://www.brainlaunch.com/index2.php/contact/">
+											CONTACT US
+										</a>
+	</li></li></li></li></li>
+											</li>
+										</ul>
+									</nav>
+                                </div>
+                            </div>
+                        </header>
+				<!-- /Top Nav -->
+</div>
+
+
+			<!-- REVOLUTION SLIDER -->
+			<section id="slider" class="fullwidthbanner-container roundedcorners">
+				<!--
+					Navigation Styles:
+
+						data-navigationStyle="" theme default navigation
+
+						data-navigationStyle="preview1"
+						data-navigationStyle="preview2"
+						data-navigationStyle="preview3"
+						data-navigationStyle="preview4"
+
+					Bottom Shadows
+						data-shadow="1"
+						data-shadow="2"
+						data-shadow="3"
+
+					Slider Height (do not use on fullscreen mode)
+						data-height="300"
+						data-height="350"
+						data-height="400"
+						data-height="450"
+						data-height="500"
+						data-height="550"
+						data-height="600"
+						data-height="650"
+						data-height="700"
+						data-height="750"
+						data-height="800"
+				-->
+				<div class="fullscreenbanner" data-navigationStyle="preview4">
+					<ul class="hide">
+
+						<!-- SLIDE -->
+						<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="" data-thumb="assets/images/demo/video/neuron_thumb.jpg">
+
+							<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/video/neuron.jpg" alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+							<div class="tp-caption tp-fade fadeout fullscreenvideo"
+								data-x="0"
+								data-y="0"
+								data-speed="1000"
+								data-start="1100"
+								data-easing="Power4.easeOut"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1500"
+								data-endeasing="Power4.easeIn"
+								data-autoplay="true"
+								data-autoplayonlyfirsttime="false"
+								data-nextslideatend="true"
+								data-volume="mute"
+								data-forceCover="1"
+								data-aspectratio="16:9"
+								data-forcerewind="on" style="z-index: 2;">
+
+								<div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div>
+
+								<video class="fullvideo" preload="none" poster="assets/images/demo/video/neuron.jpg">
+									<source src="assets/images/demo/video/neuron.webm" type="video/webm" />
+									<source src="assets/images/demo/video/neuron.mp4" type="video/mp4" />
+								</video>
+
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme text_white"
+								data-x="center"
+								data-y="180"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;">
+								<span class="weight-300">Launch Pad for a Child's Success</span>
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme large_bold_white"
+								data-x="center"
+								data-y="230"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;">
+								WELCOME TO BRAIN LAUNCH
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white"
+								data-x="center"
+								data-y="350"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; width: 750px; max-width: 750px; white-space: normal; text-align:center;">
+								Providing affordable, easy-to-administer programs that will start children on a journey towards actualizing their true potential.
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme"
+								data-x="center"
+								data-y="438"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3;">
+								<a href="#purchase" class="btn btn-default btn-lg">
+									<span>Purchase Brain Launch Program One Now!</span>
+								</a>
+							</div>
+
+						</li>
+
+						<!-- SLIDE  -->
+						<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" > <!-- data-title="Slide title 1" data-thumb="assets/images/demo/150x99/27-min.jpg">  -->
+
+							<img src="assets/images/1x1.png" data-lazyload="assets/images/demo/1200x800/31-min.jpg" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+							<div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div>
+
+							<div class="tp-caption customin ltl tp-resizeme text_white"
+								data-x="center"
+								data-y="180"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1000"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10;">
+								<span class="weight-300">Launch Pad for a Child's Success</span>
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme large_bold_white"
+								data-x="center"
+								data-y="230"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10;">
+								WELCOME TO BRAIN LAUNCH
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme small_light_white"
+								data-x="center"
+								data-y="350"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1400"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10; width: 750px; max-width: 750px; white-space: normal; text-align:center;">
+								Providing affordable, easy-to-administer programs that will start children on a journey towards actualizing their true potential.
+							</div>
+
+							<div class="tp-caption customin ltl tp-resizeme"
+								data-x="center"
+								data-y="438"
+								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 10;">
+								<a href="#purchase" class="btn btn-default btn-lg">
+									<span>Purchase Brain Launch Program One Now!</span>
+								</a>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+			</section>
+			<!-- /REVOLUTION SLIDER -->
+
+			<!-- CALLOUT -->
+			<div class="alert alert-transparent bordered-bottom nomargin">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-9 col-sm-12"><!-- left text -->
+							<h3>Register Now and get a<span><strong> FREE Begining Program</strong></span> for your Child!</h3>
+							<p class="font-lato weight-300 size-20 nomargin-bottom">
+								Launch Pad for YOUR Child's Success!<!-- /left text -->
+
+
+						</p></div><div class="col-md-3 col-sm-12 text-right"><!-- right btn -->
+							<a href="#purchase" rel="nofollow" target="_blank" class="btn btn-primary btn-lg">PURCHASE NOW</a>
+						</div><!-- /right btn -->
+
+					</div>
+
+				</div>
+			</div>
+			<!-- /CALLOUT -->
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-5 col-sm-5">
+							<a class="image-hover lightbox thumbnail" href="http://vimeo.com/166930720" data-plugin-options='{"type":"iframe"}'>
+								<span class="image-hover-icon image-hover-light"><!-- image-hover-light | image-hover-dark -->
+									<i class="fa fa-vimeo-square"><!-- video icon --></i>
+								</span>
+								<img class="img-responsive" src="assets/images/foundation960x832.png" alt="Learn About the Foundational Brain Systems">
+							</a>
+						</div>
+
+						<div class="col-md-7 col-sm-7">
+
+							<header class="margin-bottom-60">
+								<h3>Brain Launch <br>
+							    Launch Pad for a Child's Success</h3>
+                                </header>
+
+								<blockquote>
+								  <h1 class="lead font-lato">Here is a video overview of the 'Foundational Brain Systems&quot; Model.
+								    Parents can overcome the problems caused by too much video time and not enough 3D real world activity. Hand eye coordination is just the &quot;tip of the iceberg&quot; of the problems caused by underdeveloped Foundational Brain Systems. Reviewing the larger framework of the brain, 'Informational Processing System&quot; can be strengthend with basic exercises designed to focus on the FBS.</h1>
+							  	</blockquote>
+
+							<a class="btn btn-default btn-lg size-15 margin-top-30 lightbox" href="http://vimeo.com/166930720" data-plugin-options='{"type":"iframe"}'>WATCH VIDEO</a>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+			<!-- PARALLAX -->
+			<section class="parallax parallax-2 padding-xxs" style="background-image: url('assets/images/demo/vision-min.jpg');">
+				<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<div class="row countTo-md text-center">
+
+						<div class="col-xs-6 col-sm-3">
+							<i class="fa fa-users"></i>
+						  <h5>A child's brain development in today's society</h5>
+						</div>
+
+						<div class="col-xs-6 col-sm-3">
+							<i class="fa fa-code"></i>
+						  <h5>Information Processing System of the Brain</h5>
+						</div>
+
+						<div class="col-xs-6 col-sm-3">
+							<i class="fa fa-twitter"></i>
+						  <h5>TWITTER</h5>
+						</div>
+
+						<div class="col-xs-6 col-sm-3">
+							<i class="fa fa-facebook"></i>
+						  <h5>FACEBOOK</h5>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /PARALLAX -->
+			<!-- Goodies -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-tablet"></i>
+									<h2>Social Mission</h2>
+								</a>
+								<p class="text-muted">Affordable, easy-to-administer programs to advance a child's brain development in today's society</p>
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-random"></i>
+									<h2>Information Processing System of the Brain</h2>
+								</a>
+								<p class="text-muted">The Foundational Brain Systems</p>
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-tint"></i>
+									<h2>Ultimate Software of the Brain</h2>
+								</a>
+								<p class="text-muted">Construct of Synergistic Intellect</p>
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa fa-cogs"></i>
+									<h2>Power Supply for the Brain</h2>
+								</a>
+								<p class="text-muted">Nutrition and Exercises</p>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- Goodies -->
+
+
+
+
+			<!-- Works -->
+			<!-- /Works -->
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+			  <div class="copyright">
+				  <div class="container">
+						<ul class="pull-right nomargin list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Brain Launch
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner"></div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+		<!-- STYLESWITCHER - REMOVE
+		<script async type="text/javascript" src="assets/plugins/styleswitcher/styleswitcher.js"></script> -->
+		<!-- REVOLUTION SLIDER -->
+		<script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="assets/js/view/demo.revolution_slider.js"></script>
+	</body>
+</html>
