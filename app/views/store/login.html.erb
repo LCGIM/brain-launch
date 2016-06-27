@@ -1,2 +1,40 @@
 <h1>Store#login</h1>
-<p>Find me in app/views/store/login.html.erb</p>
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+  <!-- Facebook Login Script -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '645180275636473',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+ </script>
+ <nav class="navbar navbar-defaut">
+    <div class="container">
+      <%= render partial: 'nav/top_fixed'  %>
+      <div>
+        <%= flash_messages  %>
+      </div>
+    </div>
+  </nav>
+    <div>
+      <%= flash_messages  %>
+    </div>
+  </header>
+  <body>
+    <div>
+      <p> Howdy! </p>
+    </div>
