@@ -26,8 +26,6 @@ development:
   <<: *default
   host: localhost
   database: brain_launch_development
-  username: alex
-  password: 5425
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
