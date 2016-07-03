@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   # end
   root 'welcome#index'
 
+  resource :accounts, only: [:show, :new, :create, :edit]
+
   # resource :welcome, only: [ :index ]
 end

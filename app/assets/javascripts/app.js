@@ -1,3 +1,4 @@
+console.log('loaded')
 window.height = jQuery(window).height();
 
 jQuery(window).ready(function() {

@@ -9,16 +9,15 @@
   </head>
   <body class="boxed">
     <%= render partial: 'nav/top_nav'  %>
+  </nav>
+  <div class="container">
     <div>
       <%= render partial: 'layouts/flash_messages'  %>
     </div>
-  </nav>
-  <div class="container">
     <%= yield %>
   </div>
 </div>
 </body>
 <footer>
-  <%= render partial: 'layouts/footer'  %>
 </footer>
 </html>

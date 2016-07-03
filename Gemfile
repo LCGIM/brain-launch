@@ -22,6 +22,7 @@ gem 'therubyracer'
 gem 'uglifier'
 gem 'unicorn'
 gem 'dotenv-rails'
+gem 'simple_form'
 
 
 group :development, :test do
