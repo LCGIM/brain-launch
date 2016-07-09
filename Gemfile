@@ -24,7 +24,7 @@ gem 'unicorn'
 gem 'dotenv-rails'
 gem 'simple_form'
 gem 'activeadmin', '~> 1.0.0.pre4'
-
+gem 'paypal-sdk-rest'
 
 
 group :development, :test do
