@@ -1,16 +1,14 @@
 Rails.application.routes.draw do
 
-
-  # devise_for :users
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  get 'programs/index'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
-  # devise_scope :user do
-  #   delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
-  # end
   root 'welcome#index'
 
   resource :accounts, only: [:show, :new, :create, :edit]
-
+  resource :programs, only: [:index]
   # resource :welcome, only: [ :index ]
 end

@@ -23,6 +23,8 @@ gem 'uglifier'
 gem 'unicorn'
 gem 'dotenv-rails'
 gem 'simple_form'
+gem 'activeadmin', '~> 1.0.0.pre4'
+
 
 
 group :development, :test do

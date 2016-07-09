@@ -2,10 +2,11 @@
   <br>
   <%= link_to("Click Here to set up your Account", new_accounts_path, class:"h4") %>
 <% else %>
+  <%= render partial: 'nav/top_fixed'  %>
   <div>
     <h4>Personal Information</h4>
     <h4>Name: <%= "#{current_user.first_name} #{current_user.last_name}" %></h4>
-    <h4>Acocunt Number: <%= current_user.account.account_number %></h4>
+    <h4>Acocunt Number: <%= current_user.id %></h4>
     <h4>Students: </h4>
     <button class="btn btn-warning">Edit Info</button>
     <button class="btn btn-success">Add Student</button>
@@ -21,6 +22,7 @@
           <th>Current Section Name</th>
           <th>Progress</th>
           <th>Phase</th>
+          <th>For Student</th>
         </tr>
         <tbody>
           <tr>
@@ -29,6 +31,7 @@
             <th>Laterality Development</th>
             <th>one of three</th>
             <th>Two</th>
+            <th>Bobby Tables <button class="btn btn-warning btn-xs">Launch</button></th>
           </tr>
         </tbody>
       </thead>
@@ -42,14 +45,18 @@
           <th>Program Name</th>
           <th>Date Purchased</th>
           <th>Date Completed</th>
-          <th></th>
+          <th>Certificiate Of Compleation</th>
         </tr>
         <tbody>
           <tr>
             <th>One</th>
             <th><%= Time.now.to_s(:short) %></th>
             <th><%= Time.now.to_s(:short) %></th>
-            <th>Print: PDF</th>
+            <th>
+              <button class="btn btn-success btn-xs">View</button>
+              <button class="btn btn-primary btn-xs">Print</button>
+              <button class="btn btn-success btn-xs">Download</button>
+            </th>
           </tr>
         </tbody>
       </thead>
