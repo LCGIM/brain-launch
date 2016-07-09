@@ -1,6 +1,8 @@
 class AccountsController < ApplicationController
 
-  def show; end
+  def show
+    @student = Student.new
+  end
 
   def new
     @account = Account.new
@@ -8,6 +10,7 @@ class AccountsController < ApplicationController
 
   def create
     @account = Account.new(account_params)
+    @account.user_id = current_user.id
     if @account.save
       redirect_to accounts_path, notice: "Account Created!"
     else

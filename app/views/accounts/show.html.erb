@@ -8,18 +8,43 @@
     <h4>Name: <%= "#{current_user.first_name} #{current_user.last_name}" %></h4>
     <h4>Acocunt Number: <%= current_user.id %></h4>
     <h4>Students: </h4>
-    <button class="btn btn-warning">Edit Info</button>
-    <button class="btn btn-success">Add Student</button>
+    <!--  -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% current_user.students.each do |student| %>
+          <tr>
+            <td><%= student.name %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <!--  -->
+    <hr>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
+        <div class="form-group">
+          <%= simple_form_for @student do |f| %>
+            <%= f.input :name, placeholder: 'Add a students name' %>
+            <%= f.button :submit %>
+          <% end %>
+        </div>
+      </div>
+    </div>
     <button class="btn btn-primary">Id like to be added to the mailing list</button>
   </div>
-  <h4>Course Information</h4>
+  <h4>Current Course Information</h4>
   <div>
     <table class="table">
       <thead>
         <tr>
           <th>Last Date Used</th>
-          <th>Current Program</th>
-          <th>Current Section Name</th>
+          <th>Program</th>
+          <th>Current Section</th>
           <th>Progress</th>
           <th>Phase</th>
           <th>For Student</th>
@@ -38,25 +63,27 @@
     </table>
   </div>
   <div>
-    <h4>List Of Past Courses Purchased</h4>
+    <h4>Courses Purchased</h4>
     <table class="table">
       <thead>
         <tr>
           <th>Program Name</th>
           <th>Date Purchased</th>
           <th>Date Completed</th>
-          <th>Certificiate Of Compleation</th>
+          <th>Certificiates</th>
+          <th></th>
         </tr>
         <tbody>
           <tr>
-            <th>One</th>
-            <th><%= Time.now.to_s(:short) %></th>
-            <th><%= Time.now.to_s(:short) %></th>
-            <th>
+            <td>One</td>
+            <td><%= Time.now.to_s(:short) %></td>
+            <td><%= Time.now.to_s(:short) %></td>
+            <td>
               <button class="btn btn-success btn-xs">View</button>
               <button class="btn btn-primary btn-xs">Print</button>
               <button class="btn btn-success btn-xs">Download</button>
-            </th>
+            </td>
+            <td><button class="btn btn-success btn-xs">Buy Again</button></td>
           </tr>
         </tbody>
       </thead>
