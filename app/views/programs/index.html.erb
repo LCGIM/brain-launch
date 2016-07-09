@@ -1,4 +1,12 @@
 <%= link_to("Go Back", :back , class: "btn btn-primary") %>
+<h3 class="text-center">Products for Sale</h3>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <% @programs.each do |p| %>
+      <%= render "program_row", program: p, order_item: @order_item %>
+    <% end %>
+  </div>
+</div>
 <p>DOWNLOAD PRINT MATERIALS BY GROUPS OR INDIVIDUALLY</p>
 <p>Select a link to download files to be printed. You can download all the files for a Program with one link. Or, select other links for a smaller subset of documents or links for the individual documents. If you prefer to display any of the individual documents, you can right-click on them and select 'Open in new window' or the equivalent for your operating system. Please note: Phase One materials are available by email with our free Pre-Launch program that covers Phase One which includes Sections 1 through 4.</p>
 <h1>General Instructions, Coaching Tips & FAQ’s</h1>

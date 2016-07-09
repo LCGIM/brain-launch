@@ -1,1 +1,4 @@
-Buy Now
+<%= link_to("Go Back", :back , class: "btn btn-primary") %>
+<% @programs.each do |program| %>
+  <%= render "programs/program_row", program: program, order_item: @order_item %>
+<% end %>
