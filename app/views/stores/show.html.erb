@@ -1,4 +1,4 @@
-<%= link_to("Go Back", :back , class: "btn btn-primary") %>
+<%= render partial: 'nav/top_fixed' %>
 <% @programs.each do |program| %>
-  <%= render "programs/program_row", program: program, order_item: @order_item %>
+    <%= render "programs/program_row", program: program, order_item: @order_item %>
 <% end %>

@@ -15,3 +15,9 @@
 *.DS_Store
 .env
 /.idea/*
+.idea/.generators
+.idea/.rakeTasks
+.idea/brain-launch.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
