@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 20160709170953) do
     t.decimal  "shipping",        precision: 12, scale: 3
     t.decimal  "total",           precision: 12, scale: 3
     t.integer  "order_status_id"
+    t.integer  "user_id"
     t.datetime "created_at",                               null: false
     t.datetime "updated_at",                               null: false
   end

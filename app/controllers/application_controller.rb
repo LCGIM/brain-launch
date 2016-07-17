@@ -5,12 +5,14 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   helper_method :current_order
 
-
-
   def current_order
-    if !session[:order_id].nil?
-      Order.find(session[:order_id])
-    else
+    begin
+      unless session[:order_id].nil?
+        Order.find(session[:order_id])
+      else
+        Order.new
+      end
+    rescue
       Order.new
     end
   end
